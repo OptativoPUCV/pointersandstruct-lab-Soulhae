@@ -12,21 +12,7 @@ y en c almacena el valor de la suma de a más b.
 */
 
 void suma(int a, int b, int * c) {
-   
-}
-
-/*
-Esta función suma los N primeros números del arreglo a
-*/
-int sumaN(int a[], int N) {
-    int i;
-    int tot = 0;
-
-    for(i = 0; i < N; i++) {
-      tot += a[i];
-    }
-
-    return tot;
+  *c = a+b;  
 }
 
 /*
@@ -35,6 +21,20 @@ Esta función debe sumar los últimos m números del
 arreglo a y almacena el resultado en *suma.
 Utilice la función sumaN.
 */
+
+/*
+Esta función suma los N primeros números del arreglo a
+*/
+int sumaN(int a[], int N) {
+  int i;
+  int tot = 0;
+
+  for(i = 0; i < N; i++) {
+    tot += a[i];
+  }
+
+  return tot;
+}
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
 
