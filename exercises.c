@@ -79,9 +79,9 @@ typedef struct {
    int capacidad; // capacidad del arreglo
 } Vector;
 
+
 Vector * crearVector(int n) {
   Vector *aux = (Vector *) calloc(n, sizeof(Vector));
-  aux->capacidad=n;
   return aux;
 }
 
