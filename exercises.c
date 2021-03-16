@@ -37,7 +37,11 @@ int sumaN(int a[], int N) {
 }
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-
+  int dif, sumaPrimeros, sumaTot;
+  dif = n-m;
+  sumaPrimeros = sumaN(a,dif);
+  sumaTot = sumaN(a,n);
+  *suma = sumaTot - sumaPrimeros;
 }
 
 /*
